@@ -27,7 +27,7 @@ checkClickedLetters = (key) => {
   }
   return valor
 }
-checkGameOver = () => {
+checkGameOver = () => { 
   if(this.errorsLeft<=0){
     return true
   }
@@ -43,7 +43,6 @@ checkWinner = () => {
     for ( let j = 0 ; j < correctlength.length ; j++){
       if ( user[i] == this.secretWord[j]){
           final++
-          correctlength = correctlength.replace(/`${checar}`/g, "")
           console.log(correctlength)
       }
     }
@@ -74,6 +73,8 @@ document.getElementById('start-game-button').onclick = function () {
 };
 
 
-document.onkeydown = function (e) {
+document.onkeydown =  (e) =>{
+  hangman2 = new Hangman();
+  let cLetter = hangman.addCorrectLetter
 
 };

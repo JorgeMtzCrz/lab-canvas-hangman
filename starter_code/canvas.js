@@ -15,16 +15,17 @@ class HangmanCanvas {
         this.ctx.moveTo(x, 400)
         x += 20
         this.ctx.lineTo(x,400)
-        this.ctx.lineWidth=10
+        this.ctx.lineWidth=10 
         x += 10
         this.ctx.stroke()
     }
   }
+  writeCorrectLetter = (index) => {
+    this.ctx
+  };
 }
 
-HangmanCanvas.prototype.writeCorrectLetter = function (index) {
 
-};
 
 HangmanCanvas.prototype.writeWrongLetter = function (letter, errorsLeft) {
 
